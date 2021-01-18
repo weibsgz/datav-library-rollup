@@ -1,0 +1,50 @@
+{
+  "name": "datav-libs-dev",
+  "version": "1.0.3",
+  "private": false,
+  "description": "慕课网数据可视化组件库",
+  "main": "dist/bundle.umd.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "dev": "rollup -wc rollup.config.dev.js",
+    "build": "eslint ./src && rollup -c rollup.config.dev.js",
+    "prod": "eslint ./src && rollup -c rollup.config.prod.js",
+    "lint":"eslint ./src"
+  },
+  "keywords": [
+    "vue",
+    "datav"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:IFreeOvO/PROJECT_DEMO_vue-datav-lib.git"
+  },
+  "author": "ifreeOvO",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.10.3",
+    "@babel/node": "^7.10.3",
+    "@babel/plugin-transform-runtime": "^7.10.5",
+    "@babel/preset-env": "^7.10.3",
+    "@vue/compiler-sfc": "^3.0.0-beta.15",
+    "eslint": "^7.18.0",
+    "eslint-plugin-vue": "^7.4.1",
+    "rollup": "^2.18.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "^3.1.2",
+    "rollup-plugin-terser": "^6.1.0",
+    "rollup-plugin-vue": "^6.0.0-beta.6",
+    "sass": "^1.26.9",
+    "vue-template-compiler": "^2.6.12"
+  },
+  "dependencies": {
+    "lodash": "^4.17.19",
+    "uuid": "^8.2.0"
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.0.5/dist/vue.global.js"></script>
+    <script src="../dist/bundle.umd.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        {{message}}
+        <!-- 引入定义的组件 -->
+        <test-component></test-component>
+        <test-component2></test-component>
+    </div>    
+    
+    <script>
+        Vue.createApp({
+            setup() {
+                var message = 'hello world!'
+                return {
+                    message
+                }
+            }
+        }).use(immoc_datav).mount("#app")
+    </script>
+</body>
+
+</html>
